@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="iOS 音频视频," />
 
 
 
@@ -84,15 +84,31 @@
 
 
 
-<meta name="description" content="天道酬勤！">
-<meta property="og:type" content="website">
-<meta property="og:title" content="liuling的博客">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="在IOS设计中，音视频的播放通常涉及到大部分设计过程中，因此清晰了解并使用音视频播放结构就很重要了，下面介绍几种常用的音视频的播放方式:
+一.使用系统提供的播放器，用system sound service去播放时长小于30s的音乐，通常是.caf,.aif,.wav格式：
+
+创建一个系统播放对象:
+
+1234AudioServicesCreateSystemSoundID ( CFURLRef">
+<meta property="og:type" content="article">
+<meta property="og:title" content="关于iOS中音频视频播放的几张方式">
+<meta property="og:url" content="http://yoursite.com/2016/05/10/音频视频/index.html">
 <meta property="og:site_name" content="liuling的博客">
-<meta property="og:description" content="天道酬勤！">
+<meta property="og:description" content="在IOS设计中，音视频的播放通常涉及到大部分设计过程中，因此清晰了解并使用音视频播放结构就很重要了，下面介绍几种常用的音视频的播放方式:
+一.使用系统提供的播放器，用system sound service去播放时长小于30s的音乐，通常是.caf,.aif,.wav格式：
+
+创建一个系统播放对象:
+
+1234AudioServicesCreateSystemSoundID ( CFURLRef">
+<meta property="og:updated_time" content="2016-05-10T01:49:16.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="liuling的博客">
-<meta name="twitter:description" content="天道酬勤！">
+<meta name="twitter:title" content="关于iOS中音频视频播放的几张方式">
+<meta name="twitter:description" content="在IOS设计中，音视频的播放通常涉及到大部分设计过程中，因此清晰了解并使用音视频播放结构就很重要了，下面介绍几种常用的音视频的播放方式:
+一.使用系统提供的播放器，用system sound service去播放时长小于30s的音乐，通常是.caf,.aif,.wav格式：
+
+创建一个系统播放对象:
+
+1234AudioServicesCreateSystemSoundID ( CFURLRef">
 
 
 
@@ -110,7 +126,7 @@
   };
 </script>
 
-  <title> liuling的博客 </title>
+  <title> 关于iOS中音频视频播放的几张方式 | liuling的博客 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -131,9 +147,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left 
-   page-home 
- ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -210,9 +224,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
   
@@ -232,10 +246,7 @@
             
             
               
-                
-                <a class="post-title-link" href="/2016/05/10/音频视频/" itemprop="url">
-                  关于iOS中音频视频播放的几张方式
-                </a>
+                关于iOS中音频视频播放的几张方式
               
             
           </h1>
@@ -275,9 +286,7 @@
       
 
       
-        
-          
-            <hr>
+        <hr>
 <p><strong>在IOS设计中，音视频的播放通常涉及到大部分设计过程中，因此清晰了解并使用音视频播放结构就很重要了，下面介绍几种常用的音视频的播放方式:</strong></p>
 <p>一.使用系统提供的播放器，用system sound service去播放时长小于30s的音乐，通常是.caf,.aif,.wav格式：</p>
 <ul>
@@ -299,236 +308,58 @@
 <p>五.使用MPMoviePlayerViewController来播放本地或者网络流的视频文件</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">     NSURL *myURL = [NSURL URLWithString:@&quot;http://v.youku.com/player/getRealM3U8/vid/XNzA3NzY3MDgw/type/video.m3u8&quot;];</span><br><span class="line">     MPMoviePlayerViewController *player =</span><br><span class="line">        [[MPMoviePlayerViewController alloc] initWithContentURL: myURL];</span><br><span class="line">player.modalTransitionStyle = UIModalTransitionStyleCoverVertical;</span><br><span class="line">[self presentViewController:player animated:YES completion:nil];</span><br></pre></td></tr></table></figure>
 
-          
+      
+    </div>
+
+    <div>
+      
         
       
     </div>
 
     <div>
       
-    </div>
+        
 
-    <div>
       
     </div>
 
     <footer class="post-footer">
       
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/05/07/First/" itemprop="url">
-                  Self-control
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-05-07T06:45:48+08:00" content="2016-05-07">
-              2016-05-07
-            </time>
-          </span>
-
+        <div class="post-tags">
           
-
-          
-            
-          
-
-          
-
-          
-          
-
+            <a href="/tags/iOS-音频视频/" rel="tag">#iOS 音频视频</a>
           
         </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <p>Self-control is essential to happiness and usefulness.</p>
-<p>It is the master of all the virtues,and has its root in self-respect.</p>
-<p>Let aman yield to his impulses and passions,and from thate moment he gives up his moral freedom.</p>
-<p>It is the self-discipline of aman that enables him to pursue success with superior diligence and sobriety.</p>
-<p>Many of the great characters in history illustrate this trait.</p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
+              <a href="/2016/05/07/First/" rel="next" title="Self-control">
+                <i class="fa fa-chevron-left"></i> Self-control
+              </a>
             
-              
-                
-                <a class="post-title-link" href="/2016/05/07/hello-world/" itemprop="url">
-                  Hello World
-                </a>
-              
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
             
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-05-07T00:09:40+08:00" content="2016-05-07">
-              2016-05-07
-            </time>
-          </span>
-
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-          
+          </div>
         </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -536,6 +367,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -555,8 +390,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.gif"
@@ -599,6 +443,17 @@
 
       </section>
 
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <p class="post-toc-empty">此文章未包含目录</p>
+            
+          </div>
+        </section>
       
 
     </div>
@@ -695,6 +550,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
 
   
 
